@@ -4,8 +4,9 @@
 (function() {
   'use strict';
 
-  // Get theme toggle button
   const themeToggle = document.getElementById('theme-toggle');
+  if (!themeToggle) return;
+
   const themeIcon = themeToggle.querySelector('.theme-icon');
 
   // Get current theme from localStorage or default to light
